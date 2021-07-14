@@ -1,0 +1,20 @@
+doctype html 
+html 
+    head 
+        meta(charset='utf-8')
+        title Questions 
+    body 
+        form(action="/questionstrials",method="POST")
+            each item in questionText
+                h2 
+                    div #{item.question}
+                each optionItem in optionText
+                    if item.question_id === optionItem.question_id
+                        input(id=optionItem.option, name=item.question,type="radio",value=optionItem.option)
+                        label(for=optionItem.option) #{optionItem.option}
+            button(type="submit") Submit  
+
+
+        
+            
+    
