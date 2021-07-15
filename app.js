@@ -120,25 +120,6 @@ app.post('/question',async function(req,res){
             }
         });
       
-        
-        // console.log("num outside "+questionNum);
-        // console.log("right outside "+rightAnswerNum);
-        // const total=await ( rightAnswerNum/questionNum)*100;
-        // if(total>35){
-        //     ifPass=true;
-        // }else{
-        //     ifPass=false;
-        // }
-        // if(questionBool){
-        //     var now =new Date();
-        //     var examEntry=await db.query((`INSERT INTO 
-        //         exam(username,dateofexam,result_pass,exam_score,no_of_question)
-        //         VALUES((SELECT username FROM users WHERE username=$1),$2,$3,$4,$5)`),[userName,now,ifPass,rightAnswerNum,questionNum]);
-        // }
-        
-    
-
-
        
 
         res.send("Answers obtained");
